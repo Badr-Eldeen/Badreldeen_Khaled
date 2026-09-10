@@ -729,6 +729,74 @@ button, input, textarea {
   align-items: center;
 }
 
+/* Hero Profile Row & Avatar */
+.hero-profile-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-avatar-wrapper {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+}
+
+.hero-avatar-glow {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(var(--cyan-rgb), 0.35) 0%, transparent 70%);
+  filter: blur(10px);
+  z-index: 0;
+  animation: avatar-glow-pulse 3s ease-in-out infinite;
+}
+
+@keyframes avatar-glow-pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+.hero-avatar-img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2.5px solid rgba(var(--cyan-rgb), 0.5);
+  box-shadow: 0 0 18px rgba(var(--cyan-rgb), 0.2);
+  position: relative;
+  z-index: 1;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-avatar-wrapper:hover .hero-avatar-img {
+  border-color: var(--cyan);
+  box-shadow: 0 0 28px rgba(var(--cyan-rgb), 0.35);
+}
+
+.hero-avatar-status {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  width: 14px;
+  height: 14px;
+  background: var(--emerald);
+  border-radius: 50%;
+  border: 2.5px solid var(--bg-base);
+  z-index: 2;
+  box-shadow: 0 0 8px rgba(var(--emerald-rgb), 0.5);
+}
+
+/* Hero Grid Children — prevent overflow */
+.hero-content,
+.hero-visual {
+  min-width: 0;
+  overflow: hidden;
+}
+
 /* Status Pill */
 .status-pill {
   display: inline-flex;
@@ -1037,6 +1105,75 @@ button, input, textarea {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  min-width: 0;
+}
+
+/* About Author Header & Photo */
+.about-author-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-photo-wrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.about-photo-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2.5px solid rgba(var(--cyan-rgb), 0.4);
+  box-shadow: 0 0 16px rgba(var(--cyan-rgb), 0.15);
+}
+
+.about-photo-badge {
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6rem;
+  font-weight: 700;
+  background: var(--bg-card);
+  color: var(--cyan);
+  padding: 0.12rem 0.45rem;
+  border-radius: 4px;
+  border: 1px solid rgba(var(--cyan-rgb), 0.3);
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.about-author-meta {
+  min-width: 0;
+  flex: 1;
+}
+
+.about-author-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.6rem;
+}
+
+.author-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text-secondary);
+  background: var(--bg-surface);
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-subtle);
+  white-space: nowrap;
 }
 
 .card-icon-header {
@@ -2769,6 +2906,40 @@ button, input, textarea {
 
 /* Standard Mobile Phones (max-width: 640px) */
 @media (max-width: 640px) {
+  /* Hero - compact for mobile */
+  .hero-section {
+    padding-top: 2.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .hero-container {
+    gap: 2rem;
+  }
+
+  .hero-profile-row {
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-avatar-wrapper {
+    width: 56px;
+    height: 56px;
+  }
+
+  .hero-avatar-img {
+    width: 56px;
+    height: 56px;
+    border-width: 2px;
+  }
+
+  .hero-avatar-status {
+    width: 12px;
+    height: 12px;
+    bottom: 2px;
+    right: 2px;
+    border-width: 2px;
+  }
+
   /* Section Header */
   .section {
     padding-top: 3.25rem;
@@ -3250,6 +3421,37 @@ button, input, textarea {
 
 /* Narrow & Compact Phones (max-width: 480px) */
 @media (max-width: 480px) {
+  .hero-section {
+    padding-top: 1.75rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .hero-profile-row {
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-avatar-wrapper {
+    width: 48px;
+    height: 48px;
+  }
+
+  .hero-avatar-img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .hero-avatar-status {
+    width: 10px;
+    height: 10px;
+    bottom: 1px;
+    right: 1px;
+  }
+
+  .hero-description {
+    margin-bottom: 1.25rem;
+  }
+
   .header-container {
     height: 4rem;
   }
