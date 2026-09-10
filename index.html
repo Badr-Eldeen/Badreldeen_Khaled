@@ -1,0 +1,2066 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Badrelden Khaled Ghareeb | Aspiring SOC Analyst &amp; Incident Response</title>
+  <meta name="description"
+    content="Portfolio of Badrelden Khaled Ghareeb — Aspiring SOC Analyst &amp; Incident Response professional. Showcasing hands-on security labs, network packet investigation, Windows endpoint telemetry, Snort IDS detection, and machine learning security projects.">
+  <meta name="keywords"
+    content="Badrelden Khaled Ghareeb, SOC Analyst, Incident Response, Cybersecurity Portfolio, Wireshark, Snort, Nmap, Packet Analysis, Cairo University">
+  <meta name="author" content="Badrelden Khaled Ghareeb">
+
+  <!-- Open Graph / Social Media Meta -->
+  <meta property="og:title" content="Badrelden Khaled Ghareeb | Aspiring SOC Analyst &amp; Incident Response">
+  <meta property="og:description"
+    content="Defensive Cybersecurity, Network Traffic Analysis, Endpoint Investigation, and Security Operations Portfolio.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon (SVG Shield) -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300f0ff'><path d='M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z'/></svg>">
+
+  <!-- Google Fonts: Inter, Poppins & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome 6 CDN for clean cybersecurity & UI icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Screen Reader Skip Link -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Ambient Cybersecurity Background Grid & Glow -->
+  <div class="cyber-grid-overlay" aria-hidden="true"></div>
+  <div class="cyber-ambient-glow" aria-hidden="true"></div>
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="#home" class="brand-logo" aria-label="Badrelden Khaled Ghareeb Portfolio Home">
+        <span class="logo-terminal-symbol">&gt;_</span>
+        <span class="logo-text">BK<span class="logo-accent">.</span>Ghareeb</span>
+        <span class="logo-badge" title="Defensive Security Focus">SOC / IR</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" id="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#tools" class="nav-link">Tools</a></li>
+          <li><a href="#projects" class="nav-link">Projects &amp; Labs</a></li>
+          <li><a href="#grad-project" class="nav-link">Grad Project</a></li>
+          <li><a href="#training" class="nav-link">Training</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#freelancing" class="nav-link">Freelancing</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Controls: Theme Toggle & Mobile Menu Button -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light and dark mode"
+          title="Toggle color theme">
+          <i class="fa-solid fa-moon theme-icon-dark" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun theme-icon-light" aria-hidden="true"></i>
+        </button>
+
+        <button id="mobile-menu-btn" class="mobile-menu-toggle" aria-label="Open mobile navigation menu"
+          aria-expanded="false" aria-controls="mobile-nav">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
+    <div class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation" aria-hidden="true">
+      <div class="mobile-nav-header">
+        <div class="mobile-nav-brand">
+          <i class="fa-solid fa-shield-halved text-cyan"></i>
+          <span>Navigation</span>
+        </div>
+        <button id="mobile-menu-close" class="mobile-close-btn" aria-label="Close navigation menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="#about" class="mobile-nav-link"><i class="fa-solid fa-user-shield"></i> About</a></li>
+        <li><a href="#skills" class="mobile-nav-link"><i class="fa-solid fa-microchip"></i> Skills</a></li>
+        <li><a href="#tools" class="mobile-nav-link"><i class="fa-solid fa-toolbox"></i> Tools</a></li>
+        <li><a href="#projects" class="mobile-nav-link"><i class="fa-solid fa-network-wired"></i> Projects &amp;
+            Labs</a></li>
+        <li><a href="#grad-project" class="mobile-nav-link"><i class="fa-solid fa-shield-virus"></i> Graduation
+            Project</a></li>
+        <li><a href="#training" class="mobile-nav-link"><i class="fa-solid fa-timeline"></i> Experience &amp;
+            Training</a></li>
+        <li><a href="#certifications" class="mobile-nav-link"><i class="fa-solid fa-certificate"></i> Certifications</a>
+        </li>
+        <li><a href="#freelancing" class="mobile-nav-link"><i class="fa-solid fa-briefcase"></i> Freelancing</a></li>
+        <li><a href="#education" class="mobile-nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+        <li><a href="#contact" class="mobile-nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+      <div class="mobile-nav-footer">
+        <span class="status-indicator-dot"></span>
+        <span>Open to SOC Internships &amp; Roles</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section section">
+      <div class="container hero-container">
+
+        <div class="hero-content">
+          <!-- Hero Profile Header with Avatar & Live Status Pill -->
+          <div class="hero-profile-row reveal">
+            <div class="hero-avatar-wrapper">
+              <div class="hero-avatar-glow" aria-hidden="true"></div>
+              <img src="images/badrelden-ghareeb.png"
+                alt="Badrelden Khaled Ghareeb - Aspiring SOC Analyst & Incident Response" class="hero-avatar-img">
+              <span class="hero-avatar-status" title="Active & Open to Roles"></span>
+            </div>
+            <div class="status-pill">
+              <span class="status-ping" aria-hidden="true"></span>
+              <span class="status-text">Available for SOC Internships &amp; Junior Roles</span>
+            </div>
+          </div>
+
+          <h1 class="hero-title reveal">
+            Hi, I'm <span class="highlight-text">Badrelden Khaled Ghareeb</span>
+          </h1>
+
+          <p class="hero-subtitle reveal">
+            <span class="role-badge">Aspiring SOC Analyst</span>
+            <span class="role-separator">|</span>
+            <span class="role-badge">Incident Response</span>
+          </p>
+
+          <p class="hero-academic-meta reveal">
+            <i class="fa-solid fa-building-columns text-cyan" aria-hidden="true"></i>
+            Cairo University — Faculty of Computer Science &amp; Artificial Intelligence
+            <span class="grad-tag">Class of 2027</span>
+          </p>
+
+          <p class="hero-description reveal">
+            Computer Science and AI student dedicated to defensive cybersecurity and security operations. Actively
+            building practical capabilities in analyzing security telemetry, investigating suspicious network and
+            endpoint behavior, and detecting indicators of compromise through hands-on labs, packet analysis, and
+            realistic incident response scenarios.
+          </p>
+
+          <!-- Call To Action Buttons -->
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i>
+              <span>View Investigations</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+              <span>Contact Me</span>
+            </a>
+            <a href="https://www.linkedin.com/in/badreldeenkhaled" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline" aria-label="Visit Badrelden's LinkedIn Profile">
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+
+          <!-- Social Links Bar -->
+          <div class="hero-socials reveal">
+            <span class="social-label">Connect &amp; Profiles:</span>
+            <div class="social-links-group">
+              <a href="https://github.com/Badreldeen2006" target="_blank" rel="noopener noreferrer" class="social-link"
+                title="GitHub Profile - Badreldeen2006" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/badreldeenkhaled" target="_blank" rel="noopener noreferrer"
+                class="social-link" title="LinkedIn Profile" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://www.youtube.com/@BADRELDENGHAREEB" target="_blank" rel="noopener noreferrer"
+                class="social-link" title="YouTube Channel - @BADRELDENGHAREEB" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a href="https://www.facebook.com/badr.elden.ghareeb" target="_blank" rel="noopener noreferrer"
+                class="social-link" title="Facebook Account - Badr Elden Ghareeb" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="https://kafiil.com/u/Badr_Eldeen11" target="_blank" rel="noopener noreferrer" class="social-link"
+                title="Kafiil Freelancing Profile" aria-label="Kafiil Freelancing Profile">
+                <i class="fa-solid fa-briefcase"></i>
+              </a>
+              <a href="mailto:badrkhaledghareeb.3tel@gmail.com" class="social-link" title="Email Badrelden"
+                aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Telemetry & Interactive Terminal Preview -->
+        <div class="hero-visual reveal">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-controls" aria-hidden="true">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="terminal-title">
+                <i class="fa-solid fa-terminal"></i> analyst@soc-workstation: ~/investigations
+              </div>
+              <div class="terminal-status">
+                <span class="pulse-indicator"></span> MONITORING
+              </div>
+            </div>
+
+            <div class="terminal-body font-mono">
+              <div class="terminal-line">
+                <span class="term-prompt">$</span> <span class="term-cmd">cat</span> analyst_profile.json
+              </div>
+              <div class="terminal-output">
+                {<br>
+                &nbsp;&nbsp;<span class="term-key">"candidate"</span>: <span class="term-str">"Badrelden Khaled
+                  Ghareeb"</span>,<br>
+                &nbsp;&nbsp;<span class="term-key">"focus"</span>: [<span class="term-str">"SOC Analysis"</span>, <span
+                  class="term-str">"Incident Response"</span>],<br>
+                &nbsp;&nbsp;<span class="term-key">"university"</span>: <span class="term-str">"Cairo University (CS
+                  &amp; AI)"</span>,<br>
+                &nbsp;&nbsp;<span class="term-key">"graduation"</span>: <span class="term-num">2027</span>,<br>
+                &nbsp;&nbsp;<span class="term-key">"methodology"</span>: <span class="term-str">"Theory + Hands-on Lab
+                  Forensics"</span>,<br>
+                &nbsp;&nbsp;<span class="term-key">"primary_telemetry"</span>: [<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="term-str">"PCAP / Wireshark"</span>,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="term-str">"Snort IDS Rules"</span>,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="term-str">"Windows Event Logs"</span>,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="term-str">"Entropy &amp; PE Header Analysis"</span><br>
+                &nbsp;&nbsp;]<br>
+                }
+              </div>
+              <div class="terminal-line">
+                <span class="term-prompt">$</span> <span class="term-cmd">check-readiness</span> --role soc-tier1
+              </div>
+              <div class="terminal-output term-success">
+                <i class="fa-solid fa-check"></i> Foundational Theory Verified<br>
+                <i class="fa-solid fa-check"></i> Hands-on Labs &amp; PCAP Triage Completed<br>
+                <i class="fa-solid fa-check"></i> DEPI SOC &amp; Incident Response Training Completed<br>
+                <span class="term-highlight">&gt;&gt; Ready to contribute to defensive security teams</span>
+              </div>
+              <div class="terminal-line terminal-cursor-line">
+                <span class="term-prompt">$</span> <span class="cursor-blink">_</span>
+              </div>
+            </div>
+
+            <!-- Fast Metrics Strip -->
+            <div class="terminal-metrics-strip">
+              <div class="metric-item">
+                <span class="metric-number">6+</span>
+                <span class="metric-label">Security Labs</span>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric-item">
+                <span class="metric-number">100+</span>
+                <span class="metric-label">Hrs Analysis</span>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric-item">
+                <span class="metric-number">5+</span>
+                <span class="metric-label">Certifications &amp; Courses</span>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric-item">
+                <span class="metric-number">2027</span>
+                <span class="metric-label">Graduation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="about-section section">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <i class="fa-solid fa-user-secret"></i> Who I Am
+          </div>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">
+            A student developing technical, evidence-driven capabilities in SOC operations and Incident Response.
+          </p>
+        </div>
+
+        <div class="about-grid">
+
+          <div class="about-main-card card reveal">
+            <div class="about-author-header">
+              <div class="about-photo-wrapper">
+                <img src="images/badrelden-ghareeb.png"
+                  alt="Badrelden Khaled Ghareeb - SOC Analyst &amp; Incident Response" class="about-photo-img">
+                <span class="about-photo-badge">SOC / IR</span>
+              </div>
+              <div class="about-author-meta">
+                <h3 class="card-title">Badrelden Khaled Ghareeb</h3>
+                <span class="card-tag"><i class="fa-solid fa-building-columns text-cyan"></i> Cairo University &bull;
+                  Faculty of CS &amp; AI</span>
+                <div class="about-author-badges">
+                  <span class="author-badge"><i class="fa-solid fa-shield-halved text-cyan"></i> Aspiring SOC
+                    Analyst</span>
+                  <span class="author-badge"><i class="fa-solid fa-terminal text-emerald"></i> Incident Response</span>
+                  <span class="author-badge"><i class="fa-solid fa-graduation-cap text-amber"></i> Class of 2027</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-narrative">
+              <p>
+                I am a <strong>Computer Science and Artificial Intelligence student at Cairo University</strong>
+                (Expected Graduation: 2027), actively developing my career in defensive cybersecurity with a dedicated
+                focus on <strong>SOC Analysis and Incident Response</strong>.
+              </p>
+              <p>
+                Rather than treating security as abstract theoretical concepts, I believe in an evidence-first approach:
+                understanding exactly how an attack manifests inside packet captures, how rogue processes behave on
+                endpoints, and how disparate event logs correlate to reveal an adversary's operational timeline.
+              </p>
+              <p>
+                My learning approach bridges rigorous foundational computer science principles—such as operating system
+                internals, TCP/IP networking, and machine learning—with real-world security tools, hands-on packet
+                inspection, and attack-defense simulations.
+              </p>
+            </div>
+
+            <div class="about-quote-box">
+              <i class="fa-solid fa-quote-left quote-icon" aria-hidden="true"></i>
+              <p>
+                "I am fascinated by challenging investigations where the analyst must connect multiple fragmented pieces
+                of evidence across network traffic and endpoint telemetry, rather than simply reacting to an automated
+                alert."
+              </p>
+            </div>
+          </div>
+
+          <!-- Investigation Pillars -->
+          <div class="about-pillars card reveal">
+            <h3 class="pillars-title">
+              <i class="fa-solid fa-crosshairs text-cyan"></i> Core Areas of Practical Focus
+            </h3>
+
+            <ul class="investigation-points">
+              <li class="point-item">
+                <div class="point-icon"><i class="fa-solid fa-file-waveform"></i></div>
+                <div class="point-content">
+                  <h4>Attack Footprints in Telemetry</h4>
+                  <p>Analyzing how threats, reconnaissance, and unauthorized communications appear in packet captures,
+                    DNS queries, and system event logs.</p>
+                </div>
+              </li>
+
+              <li class="point-item">
+                <div class="point-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <div class="point-content">
+                  <h4>Endpoint &amp; Process Triage</h4>
+                  <p>Investigating parent-child process anomalies, suspicious PowerShell executions, unauthorized
+                    persistence, and living-off-the-land techniques.</p>
+                </div>
+              </li>
+
+              <li class="point-item">
+                <div class="point-icon"><i class="fa-solid fa-fingerprint"></i></div>
+                <div class="point-content">
+                  <h4>IOC Extraction &amp; Correlation</h4>
+                  <p>Identifying Indicators of Compromise (hashes, malicious IPs, domain beacons) and correlating events
+                    across multiple sources to confirm intrusions.</p>
+                </div>
+              </li>
+
+              <li class="point-item">
+                <div class="point-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <div class="point-content">
+                  <h4>Defensive Tool Operations</h4>
+                  <p>Utilizing Wireshark, Snort IDS, Nmap, and Windows Event Viewer to evaluate detection rules, analyze
+                    traffic anomalies, and document findings.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CAREER OBJECTIVE SECTION -->
+    <section class="objective-section section">
+      <div class="container">
+        <div class="objective-card reveal">
+          <div class="objective-decor-icon" aria-hidden="true">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+          <div class="objective-content">
+            <div class="section-badge badge-cyan">
+              <i class="fa-solid fa-compass"></i> Career Mission
+            </div>
+            <h2 class="objective-title">Career Objective</h2>
+            <p class="objective-statement">
+              "My objective is to develop into a highly capable <strong>SOC Analyst and Incident Response
+                professional</strong> who can effectively monitor security telemetry, triage alerts, investigate
+              suspicious network and endpoint activity, identify indicators of compromise, and contribute to robust
+              defensive security operations. I combine continuous learning, disciplined analytical thinking, and
+              hands-on lab investigation to protect digital infrastructure."
+            </p>
+            <div class="objective-tags">
+              <span class="obj-tag"><i class="fa-solid fa-check"></i> Continuous Practical Learning</span>
+              <span class="obj-tag"><i class="fa-solid fa-check"></i> Hands-on Investigation</span>
+              <span class="obj-tag"><i class="fa-solid fa-check"></i> Defensive Security &amp; Triage</span>
+              <span class="obj-tag"><i class="fa-solid fa-check"></i> Evidence-Driven Analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS & SECURITY LABS SECTION (CORE FOCUS) -->
+    <section id="projects" class="projects-section section">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <i class="fa-solid fa-flask-vial"></i> Hands-on Telemetry &amp; Analysis
+          </div>
+          <h2 class="section-title">Projects &amp; Security Labs</h2>
+          <p class="section-subtitle">
+            Demonstrating what I can actually investigate. Each lab showcases: <strong>Problem &rarr; Investigation
+              &rarr; Tools &rarr; Findings &rarr; Result</strong>.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- PROJECT 1: Network Traffic Investigation Lab -->
+          <article class="project-card card reveal" data-lab-id="lab-traffic">
+            <div class="project-header">
+              <div class="project-category-wrapper">
+                <span class="project-category">Network Security &amp; Packet Analysis</span>
+                <span class="status-badge status-completed">
+                  <i class="fa-solid fa-circle-check"></i> Completed Lab
+                </span>
+              </div>
+              <h3 class="project-title">Network Traffic Investigation Lab</h3>
+            </div>
+
+            <p class="project-description">
+              In-depth PCAP packet triage using Wireshark to investigate anomalous communications, DNS exfiltration
+              tunnels, TCP conversation anomalies, and unencrypted web data.
+            </p>
+
+            <div class="investigation-stages">
+              <div class="stage-item">
+                <span class="stage-label font-mono"><i class="fa-solid fa-circle-question"></i> PROBLEM:</span>
+                <span class="stage-text">Unusual outbound volume detected on workstation network without identifiable
+                  application origin.</span>
+              </div>
+              <div class="stage-item">
+                <span class="stage-label font-mono"><i class="fa-solid fa-magnifying-glass"></i> INVESTIGATION:</span>
+                <span class="stage-text">Filtered ARP, analyzed DNS query frequency, inspected TCP SYN flags, tracked
+                  HTTP GET payloads, and reconstructed TCP streams.</span>
+              </div>
+              <div class="stage-item">
+                <span class="stage-label font-mono"><i class="fa-solid fa-flag-checkered"></i> FINDINGS:</span>
+                <span class="stage-text">Identified repeated DNS requests to newly registered domains, suspicious
+                  high-frequency SYN beacons, and cleartext credentials in HTTP payloads.</span>
+              </div>
+            </div>
+
+            <div class="project-meta-box">
+              <div class="meta-row">
+                <span class="meta-label">Tools Used:</span>
+                <div class="tool-tags">
+                  <span class="tool-tag"><i class="fa-solid fa-chart-line"></i> Wireshark</span>
+                  <span class="tool-tag">PCAP Analysis</span>
+                  <span class="tool-tag">Display Filters</span>
+                </div>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Investigation Focus:</span>
+                <div class="scope-tags">
+                  <span class="scope-tag">DNS Tunnels</span>
+                  <span class="scope-tag">TCP Streams</span>
+                  <span class="scope-tag">TLS Handshakes</span>
+                  <span class="scope-tag">IOC Harvesting</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-sm btn-primary view-lab-btn" data-lab="lab-traffic">
+                <i class="fa-solid fa-microscope"></i> View Investigation
+              </button>
+              <a href="https://github.com/Badreldeen2006/network-traffic-investigation-lab" target="_blank"
+                rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Network Intrusion Detection Lab -->
+          <article class="project-card card reveal" data-lab-id="lab-snort">
+            <div class="project-header">
+              <div class="project-category-wrapper">
+                <span class="project-category">IDS / Threat Detection Engineering</span>
+                <span class="status-badge status-completed">
+                  <i class="fa-solid fa-circle-check"></i> Completed Lab
+                </span>
+              </div>
+              <h3 class="project-title">Network Intrusion Detection Lab</h3>
+            </div>
+
+            <p class="project-description">
+              Built and evaluated network security scenarios using Snort IDS to understand signature-based detection,
+              packet inspection, alert tuning, and intrusion logging.
+            </p>
+
+            <div class="investigation-stages">
+              <div class="stage-item">
+                <span class="stage-label font-mono"><i class="fa-solid fa-circle-question"></i> PROBLEM:</span>
+                <span class="stage-text">Simulating malicious network activity to determine if standard perimeter
+                  sensors detect stealth reconnaissance and exploit attempts.</span>
+              </div>
+              <div class="stage-item">
+                <span class="stage-label font-mono"><i class="fa-solid fa-magnifying-glass"></i> INVESTIGATION:</span>
+                <span class="stage-text">Authored custom Snort detection rules, evaluated packet inspection thresholds,
+                  logged full alert telemetry, and tested ICMP / TCP flood scenarios.</span>
+              </div>
+              <div class="stage-item">
+                <span class="stage-label font-mono"><i class="fa-solid fa-flag-checkered"></i> FINDINGS:</span>
+                <span class="stage-text">Validated alert triggers for SYN scans, malicious payload signatures, and
+                  brute-force indicators while tuning out false positives via rule thresholds.</span>
+              </div>
+            </div>
+
+            <div class="project-meta-box">
+              <div class="meta-row">
+                <span class="meta-label">Tools Used:</span>
+                <div class="tool-tags">
+                  <span class="tool-tag"><i class="fa-solid fa-shield"></i> Snort IDS</span>
+                  <span class="tool-tag">Linux CLI</span>
+                  <span class="tool-tag">Traffic Generator</span>
+                </div>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Investigation Focus:</span>
+                <div class="scope-tags">
+                  <span class="scope-tag">IDS Rules</span>
+                  <span class="scope-tag">Packet Inspection</span>
+                  <span class="scope-tag">Alert Triage</span>
+                  <span class="scope-tag">False-Positive Tuning</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-sm btn-primary view-lab-btn" data-lab="lab-snort">
+                <i class="fa-solid fa-microscope"></i> View Investigation
+              </button>
+              <a href="https://github.com/Badreldeen2006/snort-intrusion-detection-lab" target="_blank"
+                rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Network Reconnaissance & Scanning Lab -->
+          <article class="project-card card reveal" data-lab-id="lab-nmap">
+            <div class="project-header">
+              <div class="project-category-wrapper">
+                <span class="project-category">Reconnaissance &amp; Attack Surface Analysis</span>
+                <span class="status-badge status-completed">
+                  <i class="fa-solid fa-circle-check"></i> Completed Lab
+                </span>
+              </div>
+              <h3 class="project-title">Network Reconnaissance &amp; Scanning Lab</h3>
+            </div>
+
+            <p class="project-description">
+              Executed structured network reconnaissance in virtualized lab environments using Nmap to analyze host
+              discovery, service fingerprinting, and exposed vulnerabilities from a defender's perspective.
+            </p>
+
+            <div class="investigation-stages">
+              <div class="stage-item">
+                <span class="stage-label font-mono"><i class="fa-solid fa-circle-question"></i> PROBLEM:</span>
+                <span class="stage-text">Assessing exposed attack surface and auditing unmanaged services across a
+                  simulated enterprise subnet.</span>
+              </div>
+              <div class="stage-item">
+                <span class="stage-label font-mono"><i class="fa-solid fa-magnifying-glass"></i> INVESTIGATION:</span>
+                <span class="stage-text">Performed ICMP host sweeps, stealth SYN scanning (-sS), service version
+                  interrogation (-sV), OS detection (-O), and Nmap Scripting Engine (NSE) audits.</span>
+              </div>
+              <div class="stage-item">
+                <span class="stage-label font-mono"><i class="fa-solid fa-flag-checkered"></i> FINDINGS:</span>
+                <span class="stage-text">Discovered unpatched legacy FTP/Telnet ports, misconfigured HTTP admin
+                  interfaces, and exposed internal database listeners.</span>
+              </div>
+            </div>
+
+            <div class="project-meta-box">
+              <div class="meta-row">
+                <span class="meta-label">Tools Used:</span>
+                <div class="tool-tags">
+                  <span class="tool-tag"><i class="fa-solid fa-radar"></i> Nmap</span>
+                  <span class="tool-tag">NSE Scripts</span>
+                  <span class="tool-tag">VirtualBox</span>
+                </div>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Investigation Focus:</span>
+                <div class="scope-tags">
+                  <span class="scope-tag">Host Discovery</span>
+                  <span class="scope-tag">Port Scanning</span>
+                  <span class="scope-tag">Service Fingerprinting</span>
+                  <span class="scope-tag">Vulnerability Auditing</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-sm btn-primary view-lab-btn" data-lab="lab-nmap">
+                <i class="fa-solid fa-microscope"></i> View Investigation
+              </button>
+              <a href="https://github.com/Badreldeen2006/network-recon-nmap-lab" target="_blank"
+                rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Windows Endpoint Investigation Lab -->
+          <article class="project-card card reveal" data-lab-id="lab-windows">
+            <div class="project-header">
+              <div class="project-category-wrapper">
+                <span class="project-category">Endpoint Investigation &amp; DFIR</span>
+                <span class="status-badge status-completed">
+                  <i class="fa-solid fa-circle-check"></i> Completed Lab
+                </span>
+              </div>
+              <h3 class="project-title">Windows Endpoint Investigation Lab</h3>
+            </div>
+
+            <p class="project-description">
+              Investigated Windows host telemetry using native administrative tools and logging subsystems to uncover
+              anomalous processes, privilege abuse, and persistence mechanisms.
+            </p>
+
+            <div class="investigation-stages">
+              <div class="stage-item">
+                <span class="stage-label font-mono"><i class="fa-solid fa-circle-question"></i> PROBLEM:</span>
+                <span class="stage-text">Endpoint alert indicating unauthorized process spawning from temporary folders
+                  and unexpected network connections.</span>
+              </div>
+              <div class="stage-item">
+                <span class="stage-label font-mono"><i class="fa-solid fa-magnifying-glass"></i> INVESTIGATION:</span>
+                <span class="stage-text">Triaged Task Manager process trees, parsed Windows Security Logs (Event IDs
+                  4688, 4624, 4625), and audited PowerShell execution logs.</span>
+              </div>
+              <div class="stage-item">
+                <span class="stage-label font-mono"><i class="fa-solid fa-flag-checkered"></i> FINDINGS:</span>
+                <span class="stage-text">Uncovered base64 encoded PowerShell commands, rogue scheduled task persistence,
+                  and reconstructed attacker logon sequence.</span>
+              </div>
+            </div>
+
+            <div class="project-meta-box">
+              <div class="meta-row">
+                <span class="meta-label">Tools Used:</span>
+                <div class="tool-tags">
+                  <span class="tool-tag"><i class="fa-brands fa-windows"></i> Task Manager</span>
+                  <span class="tool-tag">Event Viewer</span>
+                  <span class="tool-tag">PowerShell</span>
+                </div>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Investigation Focus:</span>
+                <div class="scope-tags">
+                  <span class="scope-tag">Process Trees</span>
+                  <span class="scope-tag">Event ID 4688</span>
+                  <span class="scope-tag">PowerShell Logging</span>
+                  <span class="scope-tag">Persistence Registry</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-sm btn-primary view-lab-btn" data-lab="lab-windows">
+                <i class="fa-solid fa-microscope"></i> View Investigation
+              </button>
+              <a href="https://github.com/Badreldeen2006/windows-endpoint-investigation-lab" target="_blank"
+                rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: Malware / IOC Investigation Lab -->
+          <article class="project-card card reveal" data-lab-id="lab-malware">
+            <div class="project-header">
+              <div class="project-category-wrapper">
+                <span class="project-category">Malware Analysis &amp; Machine Learning</span>
+                <span class="status-badge status-completed">
+                  <i class="fa-solid fa-circle-check"></i> Completed Analysis
+                </span>
+              </div>
+              <h3 class="project-title">Malware / IOC Investigation &amp; ML Detection</h3>
+            </div>
+
+            <p class="project-description">
+              Investigated suspicious binary artifacts through static inspection (entropy, PE headers, hashes) and
+              developed a Random Forest classifier to detect packed and malicious samples.
+            </p>
+
+            <div class="investigation-stages">
+              <div class="stage-item">
+                <span class="stage-label font-mono"><i class="fa-solid fa-circle-question"></i> PROBLEM:</span>
+                <span class="stage-text">Traditional signature-based antiviruses struggle against polymorphic,
+                  high-entropy packed executable payloads.</span>
+              </div>
+              <div class="stage-item">
+                <span class="stage-label font-mono"><i class="fa-solid fa-magnifying-glass"></i> INVESTIGATION:</span>
+                <span class="stage-text">Extracted cryptographic hashes (MD5/SHA256), calculated PE section Shannon
+                  entropy, inspected suspicious API imports, and trained a Random Forest model.</span>
+              </div>
+              <div class="stage-item">
+                <span class="stage-label font-mono"><i class="fa-solid fa-flag-checkered"></i> FINDINGS:</span>
+                <span class="stage-text">Demonstrated high correlation between section entropy > 7.0 and packed malware;
+                  model achieved high precision in isolating suspicious binaries.</span>
+              </div>
+            </div>
+
+            <div class="project-meta-box">
+              <div class="meta-row">
+                <span class="meta-label">Tools Used:</span>
+                <div class="tool-tags">
+                  <span class="tool-tag"><i class="fa-brands fa-python"></i> Python</span>
+                  <span class="tool-tag">Scikit-Learn</span>
+                  <span class="tool-tag">pefile</span>
+                  <span class="tool-tag">Entropy Analysis</span>
+                </div>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Investigation Focus:</span>
+                <div class="scope-tags">
+                  <span class="scope-tag">Section Entropy</span>
+                  <span class="scope-tag">Import Tables</span>
+                  <span class="scope-tag">Random Forest ML</span>
+                  <span class="scope-tag">IOC Harvesting</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-sm btn-primary view-lab-btn" data-lab="lab-malware">
+                <i class="fa-solid fa-microscope"></i> View Investigation
+              </button>
+              <a href="https://github.com/Badreldeen2006/malware-entropy-ml-detection" target="_blank"
+                rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 6: Security Monitoring / SIEM Lab (Currently Developing) -->
+          <article class="project-card card card-in-progress reveal" data-lab-id="lab-siem">
+            <div class="project-header">
+              <div class="project-category-wrapper">
+                <span class="project-category">SIEM &amp; Security Operations Center</span>
+                <span class="status-badge status-developing">
+                  <i class="fa-solid fa-spinner fa-spin"></i> Currently Developing
+                </span>
+              </div>
+              <h3 class="project-title">Security Monitoring / SIEM Lab Testbed</h3>
+            </div>
+
+            <p class="project-description">
+              Building a centralized security monitoring and log correlation environment in a virtualized lab to
+              practice telemetry ingestion, detection rule drafting, and alert triage.
+            </p>
+
+            <div class="investigation-stages">
+              <div class="stage-item">
+                <span class="stage-label font-mono"><i class="fa-solid fa-circle-question"></i> OBJECTIVE:</span>
+                <span class="stage-text">Deploy an accessible lab SIEM instance to aggregate multi-host telemetry and
+                  test cross-source alert correlation rules.</span>
+              </div>
+              <div class="stage-item">
+                <span class="stage-label font-mono"><i class="fa-solid fa-magnifying-glass"></i> INVESTIGATION
+                  FOCUS:</span>
+                <span class="stage-text">Configuring log shippers, ingesting Windows Event Logs, defining correlation
+                  thresholds for brute-force attacks, and building triage dashboards.</span>
+              </div>
+              <div class="stage-item">
+                <span class="stage-label font-mono"><i class="fa-solid fa-flag-checkered"></i> CURRENT STATUS:</span>
+                <span class="stage-text">Lab architecture designed; actively practicing query construction, correlation
+                  logic, and drafting Tier-1 SOC incident handling playbooks.</span>
+              </div>
+            </div>
+
+            <div class="project-meta-box">
+              <div class="meta-row">
+                <span class="meta-label">Target Stack:</span>
+                <div class="tool-tags">
+                  <span class="tool-tag"><i class="fa-solid fa-server"></i> SIEM Testbed</span>
+                  <span class="tool-tag">Syslog Ingestion</span>
+                  <span class="tool-tag">Log Correlation</span>
+                </div>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Skills In Progress:</span>
+                <div class="scope-tags">
+                  <span class="scope-tag">Detection Rules</span>
+                  <span class="scope-tag">Event Aggregation</span>
+                  <span class="scope-tag">Incident Playbooks</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-sm btn-secondary view-lab-btn" data-lab="lab-siem">
+                <i class="fa-solid fa-road"></i> Lab Roadmap
+              </button>
+              <a href="https://github.com/Badreldeen2006/siem-security-monitoring-lab" target="_blank"
+                rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills-section section">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <i class="fa-solid fa-layer-group"></i> Technical Competencies
+          </div>
+          <h2 class="section-title">Skills Matrix</h2>
+          <p class="section-subtitle">
+            Core analytical and technical skills developed through rigorous university coursework, certified training,
+            and hands-on laboratory experiments.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Category 1: SOC & Incident Response -->
+          <div class="skill-category-card card reveal">
+            <div class="skill-cat-header">
+              <div class="cat-icon bg-cyan"><i class="fa-solid fa-shield-virus"></i></div>
+              <h3 class="cat-title">SOC &amp; Incident Response</h3>
+            </div>
+            <p class="cat-desc">Defensive operations, telemetry triage, and investigation lifecycle.</p>
+            <ul class="skill-chips">
+              <li class="skill-chip">Security Monitoring</li>
+              <li class="skill-chip">Incident Investigation</li>
+              <li class="skill-chip">IOC Identification</li>
+              <li class="skill-chip">Alert Analysis</li>
+              <li class="skill-chip">Basic Incident Response Concepts</li>
+              <li class="skill-chip">Log Analysis</li>
+              <li class="skill-chip">Threat Investigation</li>
+            </ul>
+          </div>
+
+          <!-- Category 2: Networking -->
+          <div class="skill-category-card card reveal">
+            <div class="skill-cat-header">
+              <div class="cat-icon bg-blue"><i class="fa-solid fa-network-wired"></i></div>
+              <h3 class="cat-title">Networking</h3>
+            </div>
+            <p class="cat-desc">Comprehensive protocol knowledge and enterprise packet flow.</p>
+            <ul class="skill-chips">
+              <li class="skill-chip">TCP/IP</li>
+              <li class="skill-chip">IPv4 / IPv6</li>
+              <li class="skill-chip">TCP / UDP</li>
+              <li class="skill-chip">DNS</li>
+              <li class="skill-chip">HTTP / HTTPS</li>
+              <li class="skill-chip">Packet Switching</li>
+              <li class="skill-chip">Network Troubleshooting</li>
+              <li class="skill-chip">VLANs</li>
+              <li class="skill-chip">Routing Protocols</li>
+              <li class="skill-chip">Network Traffic Analysis</li>
+            </ul>
+          </div>
+
+          <!-- Category 3: Windows Security & Administration -->
+          <div class="skill-category-card card reveal">
+            <div class="skill-cat-header">
+              <div class="cat-icon bg-indigo"><i class="fa-brands fa-windows"></i></div>
+              <h3 class="cat-title">Windows Security &amp; Admin</h3>
+            </div>
+            <p class="cat-desc">Internal mechanics, event telemetry, and host artifact analysis.</p>
+            <ul class="skill-chips">
+              <li class="skill-chip">Windows Processes</li>
+              <li class="skill-chip">Task Manager</li>
+              <li class="skill-chip">Windows Event Logs</li>
+              <li class="skill-chip">Process Investigation</li>
+              <li class="skill-chip">System Investigation</li>
+              <li class="skill-chip">Basic Windows Security Concepts</li>
+              <li class="skill-chip">Endpoint Investigation</li>
+            </ul>
+          </div>
+
+          <!-- Category 4: Linux -->
+          <div class="skill-category-card card reveal">
+            <div class="skill-cat-header">
+              <div class="cat-icon bg-amber"><i class="fa-brands fa-linux"></i></div>
+              <h3 class="cat-title">Linux Fundamentals</h3>
+            </div>
+            <p class="cat-desc">Command-line proficiency, system permissions, and utilities.</p>
+            <ul class="skill-chips">
+              <li class="skill-chip">Linux Fundamentals</li>
+              <li class="skill-chip">Command Line (Bash)</li>
+              <li class="skill-chip">File &amp; Process Investigation</li>
+              <li class="skill-chip">Permissions &amp; User Rights</li>
+              <li class="skill-chip">Networking Commands</li>
+              <li class="skill-chip">Security Tool Usage</li>
+            </ul>
+          </div>
+
+          <!-- Category 5: Network Security -->
+          <div class="skill-category-card card reveal">
+            <div class="skill-cat-header">
+              <div class="cat-icon bg-teal"><i class="fa-solid fa-lock"></i></div>
+              <h3 class="cat-title">Network Security</h3>
+            </div>
+            <p class="cat-desc">Perimeter detection, signature auditing, and suspicious packet identification.</p>
+            <ul class="skill-chips">
+              <li class="skill-chip">IDS / IPS Concepts</li>
+              <li class="skill-chip">Network Traffic Analysis</li>
+              <li class="skill-chip">Packet Capture Analysis</li>
+              <li class="skill-chip">Suspicious Activity Investigation</li>
+              <li class="skill-chip">Network Scanning Concepts</li>
+            </ul>
+          </div>
+
+          <!-- Category 6: Malware Analysis -->
+          <div class="skill-category-card card reveal">
+            <div class="skill-cat-header">
+              <div class="cat-icon bg-rose"><i class="fa-solid fa-bug"></i></div>
+              <h3 class="cat-title">Malware Analysis</h3>
+            </div>
+            <p class="cat-desc">Static triage, hash matching, and entropy inspection.</p>
+            <ul class="skill-chips">
+              <li class="skill-chip">Malware Investigation Fundamentals</li>
+              <li class="skill-chip">IOC Analysis</li>
+              <li class="skill-chip">File Analysis</li>
+              <li class="skill-chip">Entropy Analysis</li>
+              <li class="skill-chip">Suspicious Process Investigation</li>
+              <li class="skill-chip">Basic Malware Detection Concepts</li>
+            </ul>
+          </div>
+
+          <!-- Category 7: SIEM & Log Analysis -->
+          <div class="skill-category-card card reveal">
+            <div class="skill-cat-header">
+              <div class="cat-icon bg-purple"><i class="fa-solid fa-chart-pie"></i></div>
+              <h3 class="cat-title">SIEM &amp; Log Analysis</h3>
+            </div>
+            <p class="cat-desc">
+              <span class="badge-mini badge-learning">Learning / Lab Experience</span>
+            </p>
+            <ul class="skill-chips">
+              <li class="skill-chip">SIEM Fundamentals</li>
+              <li class="skill-chip">Log Collection</li>
+              <li class="skill-chip">Log Analysis</li>
+              <li class="skill-chip">Event Correlation</li>
+              <li class="skill-chip">Security Event Investigation</li>
+            </ul>
+          </div>
+
+          <!-- Category 8: Programming & Scripting -->
+          <div class="skill-category-card card reveal">
+            <div class="skill-cat-header">
+              <div class="cat-icon bg-cyan"><i class="fa-solid fa-code"></i></div>
+              <h3 class="cat-title">Programming &amp; Scripting</h3>
+            </div>
+            <p class="cat-desc">Software development and automation to support security workflows.</p>
+            <ul class="skill-chips">
+              <li class="skill-chip font-mono">Python</li>
+              <li class="skill-chip font-mono">Kotlin</li>
+              <li class="skill-chip font-mono">PHP</li>
+              <li class="skill-chip font-mono">SQL</li>
+              <li class="skill-chip">Basic Scripting &amp; Automation</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TOOLS SECTION -->
+    <section id="tools" class="tools-section section">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <i class="fa-solid fa-screwdriver-wrench"></i> Security Toolkit
+          </div>
+          <h2 class="section-title">Tools &amp; Technologies</h2>
+          <p class="section-subtitle">
+            Grouped by purpose, with clear distinction between tools practiced in hands-on labs and technologies
+            currently being learned.
+          </p>
+        </div>
+
+        <div class="tools-legend reveal">
+          <span class="legend-item">
+            <span class="badge-status-dot dot-practiced"></span> Hands-on / Practiced
+          </span>
+          <span class="legend-item">
+            <span class="badge-status-dot dot-learning"></span> Currently Learning / Lab Experience
+          </span>
+        </div>
+
+        <div class="tools-grid">
+
+          <!-- Group 1: Network Analysis -->
+          <div class="tool-group-card card reveal">
+            <h3 class="group-title">
+              <i class="fa-solid fa-magnifying-glass-chart text-cyan"></i> Network Analysis
+            </h3>
+            <div class="tool-items-list">
+              <div class="tool-entry">
+                <div class="tool-info">
+                  <span class="tool-name">Wireshark</span>
+                  <span class="tool-desc">Packet capture, protocol dissection, stream following, filter creation</span>
+                </div>
+                <span class="tool-status practiced">Hands-on</span>
+              </div>
+              <div class="tool-entry">
+                <div class="tool-info">
+                  <span class="tool-name">Cisco Packet Tracer</span>
+                  <span class="tool-desc">Network simulation, topology design, routing/switching configuration</span>
+                </div>
+                <span class="tool-status practiced">Hands-on</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group 2: Network Security -->
+          <div class="tool-group-card card reveal">
+            <h3 class="group-title">
+              <i class="fa-solid fa-shield-virus text-teal"></i> Network Security
+            </h3>
+            <div class="tool-items-list">
+              <div class="tool-entry">
+                <div class="tool-info">
+                  <span class="tool-name">Snort</span>
+                  <span class="tool-desc">Rule writing, intrusion detection, packet inspection, alert tuning</span>
+                </div>
+                <span class="tool-status practiced">Hands-on</span>
+              </div>
+              <div class="tool-entry">
+                <div class="tool-info">
+                  <span class="tool-name">Nmap</span>
+                  <span class="tool-desc">Network discovery, service interrogation, NSE vulnerability checks</span>
+                </div>
+                <span class="tool-status practiced">Hands-on</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group 3: Windows -->
+          <div class="tool-group-card card reveal">
+            <h3 class="group-title">
+              <i class="fa-brands fa-windows text-blue"></i> Windows Administration &amp; Security
+            </h3>
+            <div class="tool-items-list">
+              <div class="tool-entry">
+                <div class="tool-info">
+                  <span class="tool-name">Task Manager</span>
+                  <span class="tool-desc">Process inspection, parent-child verification, resource monitoring</span>
+                </div>
+                <span class="tool-status practiced">Hands-on</span>
+              </div>
+              <div class="tool-entry">
+                <div class="tool-info">
+                  <span class="tool-name">Windows Event Viewer</span>
+                  <span class="tool-desc">Security event auditing (Event IDs 4624, 4625, 4688), system logs</span>
+                </div>
+                <span class="tool-status practiced">Hands-on</span>
+              </div>
+              <div class="tool-entry">
+                <div class="tool-info">
+                  <span class="tool-name">PowerShell</span>
+                  <span class="tool-desc">Scripting, querying system state, event log retrieval, triage commands</span>
+                </div>
+                <span class="tool-status practiced">Hands-on</span>
+              </div>
+              <div class="tool-entry">
+                <div class="tool-info">
+                  <span class="tool-name">Windows Security Tools</span>
+                  <span class="tool-desc">Administrative consoles, services management, registry inspection</span>
+                </div>
+                <span class="tool-status practiced">Hands-on</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group 4: Linux -->
+          <div class="tool-group-card card reveal">
+            <h3 class="group-title">
+              <i class="fa-brands fa-linux text-amber"></i> Linux CLI &amp; Utilities
+            </h3>
+            <div class="tool-items-list">
+              <div class="tool-entry">
+                <div class="tool-info">
+                  <span class="tool-name">Linux CLI Tools</span>
+                  <span class="tool-desc">grep, sed, awk, find, permissions management, file investigation</span>
+                </div>
+                <span class="tool-status practiced">Hands-on</span>
+              </div>
+              <div class="tool-entry">
+                <div class="tool-info">
+                  <span class="tool-name">Networking Utilities</span>
+                  <span class="tool-desc">netstat, ss, ip, ifconfig, tcpdump, ping, traceroute, dig</span>
+                </div>
+                <span class="tool-status practiced">Hands-on</span>
+              </div>
+              <div class="tool-entry">
+                <div class="tool-info">
+                  <span class="tool-name">Security Utilities</span>
+                  <span class="tool-desc">Open-source forensic scanners, hash generators, system audit scripts</span>
+                </div>
+                <span class="tool-status practiced">Hands-on</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group 5: Virtualization & Labs -->
+          <div class="tool-group-card card reveal">
+            <h3 class="group-title">
+              <i class="fa-solid fa-box text-purple"></i> Virtualization &amp; Labs
+            </h3>
+            <div class="tool-items-list">
+              <div class="tool-entry">
+                <div class="tool-info">
+                  <span class="tool-name">Oracle VirtualBox</span>
+                  <span class="tool-desc">Isolated lab environments, custom virtual networking, multi-OS setups</span>
+                </div>
+                <span class="tool-status practiced">Hands-on</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group 6: SIEM -->
+          <div class="tool-group-card card reveal">
+            <h3 class="group-title">
+              <i class="fa-solid fa-server text-cyan"></i> SIEM &amp; Log Monitoring
+            </h3>
+            <div class="tool-items-list">
+              <div class="tool-entry">
+                <div class="tool-info">
+                  <span class="tool-name">SIEM Tools (Lab / Learning)</span>
+                  <span class="tool-desc">Studying SIEM architectures, event log shippers, search syntax, and
+                    correlation rules</span>
+                </div>
+                <span class="tool-status learning">Currently Learning</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GRADUATION PROJECT SECTION -->
+    <section id="grad-project" class="grad-project-section section">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <i class="fa-solid fa-shield-cat"></i> Major Academic Work
+          </div>
+          <h2 class="section-title">Graduation Project</h2>
+          <p class="section-subtitle">
+            An ambitious ongoing research and engineering endeavor bridging mobile security, Android development, and
+            machine learning.
+          </p>
+        </div>
+
+        <div class="grad-project-showcase card reveal">
+          <div class="grad-badge-row">
+            <span class="project-tag-pill">Cairo University CS &amp; AI</span>
+            <span class="status-badge status-developing">
+              <i class="fa-solid fa-spinner fa-spin"></i> Ongoing Graduation Project
+            </span>
+          </div>
+
+          <div class="grad-main-grid">
+            <div class="grad-details">
+              <h3 class="grad-title">Permission Guard</h3>
+              <h4 class="grad-subtitle">ML-Powered Mobile Application Permission &amp; Security Analyzer</h4>
+
+              <p class="grad-lead">
+                Permission Guard focuses on evaluating Android applications from a security perspective. It audits
+                requested application permissions, detects suspicious runtime behaviors, classifies high-risk intent
+                triggers, and leverages machine learning models to identify potentially malicious or over-privileged
+                apps.
+              </p>
+
+              <div class="concept-trio">
+                <div class="trio-item">
+                  <i class="fa-solid fa-mobile-screen-button text-cyan"></i>
+                  <span>Mobile Security</span>
+                </div>
+                <span class="trio-plus">+</span>
+                <div class="trio-item">
+                  <i class="fa-brands fa-android text-emerald"></i>
+                  <span>Android &amp; Kotlin</span>
+                </div>
+                <span class="trio-plus">+</span>
+                <div class="trio-item">
+                  <i class="fa-solid fa-brain text-purple"></i>
+                  <span>Machine Learning &amp; TFLite</span>
+                </div>
+              </div>
+
+              <div class="grad-features-list">
+                <h5 class="features-heading"><i class="fa-solid fa-list-check"></i> Key Project Components &amp;
+                  Architecture:</h5>
+                <ul class="feature-bullets">
+                  <li>
+                    <strong>Installed Application Scanning:</strong> Static analysis of AndroidManifest.xml permissions,
+                    declaration of dangerous privileges, and intent filters.
+                  </li>
+                  <li>
+                    <strong>Permission Risk Scoring:</strong> Identifying over-privileged applications requesting
+                    invasive hardware/data access (SMS, Camera, Contacts, Background Location).
+                  </li>
+                  <li>
+                    <strong>Suspicious App Identification:</strong> Profiling background services, broadcast receivers,
+                    and stealth execution triggers.
+                  </li>
+                  <li>
+                    <strong>Malicious URL &amp; Link Detection:</strong> Scanning embedded web endpoints against threat
+                    intelligence and heuristic risk scoring.
+                  </li>
+                  <li>
+                    <strong>TFLite ML Classifier:</strong> On-device TensorFlow Lite model trained on permission and API
+                    call matrices for rapid, privacy-preserving threat inference.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="roadmap-box">
+                <h5 class="roadmap-heading"><i class="fa-solid fa-route"></i> Development Roadmap:</h5>
+                <div class="roadmap-steps">
+                  <div class="step-badge done"><i class="fa-solid fa-check"></i> Phase 1: Architecture &amp; Static
+                    Manifest Parser</div>
+                  <div class="step-badge active"><i class="fa-solid fa-clock"></i> Phase 2: Feature Extraction &amp; ML
+                    Training</div>
+                  <div class="step-badge future"><i class="fa-solid fa-hourglass"></i> Phase 3: On-Device TFLite Engine
+                    &amp; UI</div>
+                </div>
+              </div>
+
+              <div class="grad-actions">
+                <a href="https://github.com/Badreldeen2006/permission-guard" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-primary">
+                  <i class="fa-brands fa-github"></i> GitHub (Project Repo)
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                  <i class="fa-solid fa-file-lines"></i> Project Documentation
+                </a>
+                <span class="btn btn-outline btn-disabled" title="Demo will be released upon completion of Phase 3">
+                  <i class="fa-solid fa-play"></i> Live Demo (Coming Soon)
+                </span>
+              </div>
+            </div>
+
+            <div class="grad-sidebar-card">
+              <div class="sidebar-meta-box">
+                <div class="meta-header">
+                  <i class="fa-solid fa-microchip"></i> System Architecture Spec
+                </div>
+                <div class="meta-content font-mono text-sm">
+                  <div class="meta-spec-row">
+                    <span class="spec-k">Target OS:</span>
+                    <span class="spec-v">Android (API 26+)</span>
+                  </div>
+                  <div class="meta-spec-row">
+                    <span class="spec-k">Primary Lang:</span>
+                    <span class="spec-v">Kotlin</span>
+                  </div>
+                  <div class="meta-spec-row">
+                    <span class="spec-k">ML Engine:</span>
+                    <span class="spec-v">TensorFlow Lite</span>
+                  </div>
+                  <div class="meta-spec-row">
+                    <span class="spec-k">Model Type:</span>
+                    <span class="spec-v">Random Forest / NN</span>
+                  </div>
+                  <div class="meta-spec-row">
+                    <span class="spec-k">Analysis Mode:</span>
+                    <span class="spec-v">Static + On-Device</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sidebar-quote-box">
+                <i class="fa-solid fa-lightbulb text-amber"></i>
+                <p>
+                  "Permission Guard represents the synthesis of software engineering, defensive mobile security, and
+                  practical machine learning to safeguard end users from evasive mobile malware."
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & TRAINING SECTION -->
+    <section id="training" class="training-section section">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <i class="fa-solid fa-timeline"></i> Practical Learning Path
+          </div>
+          <h2 class="section-title">Experience &amp; Training</h2>
+          <p class="section-subtitle">
+            Honest record of intensive technical training, accredited cybersecurity bootcamps, and networking academies.
+          </p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <!-- Item 1: DEPI -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot bg-cyan" aria-hidden="true">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="timeline-card card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-tag tag-training">Training Experience &bull; Completed</span>
+                  <h3 class="timeline-title">DEPI — Incident Response &amp; SOC Analyst Training</h3>
+                  <h4 class="timeline-institution">Digital Egypt Pioneers Initiative (DEPI)</h4>
+                </div>
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Accredited Program</span>
+              </div>
+              <p class="timeline-text">
+                Participated in an intensive cybersecurity training track focused on SOC operations and Incident
+                Response methodologies. Deepened practical knowledge of security event monitoring, triage protocols, log
+                correlation, and threat detection workflows.
+              </p>
+              <div class="timeline-skills">
+                <span class="skill-mini-tag">Incident Response</span>
+                <span class="skill-mini-tag">Security Monitoring</span>
+                <span class="skill-mini-tag">SOC Concepts</span>
+                <span class="skill-mini-tag">Investigation Methodologies</span>
+                <span class="skill-mini-tag">Security Analysis</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Cisco / CCNA Training -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot bg-blue" aria-hidden="true">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <div class="timeline-card card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-tag tag-training">Networking Training &bull; Completed</span>
+                  <h3 class="timeline-title">Cisco CCNA Training</h3>
+                  <h4 class="timeline-institution">Cisco Systems / Training Partner</h4>
+                </div>
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Comprehensive Course</span>
+              </div>
+              <p class="timeline-text">
+                Acquired an in-depth understanding of enterprise networking architectures, packet switching, and IP
+                routing fundamentals necessary to diagnose network anomalies and defend communication backbones.
+              </p>
+              <div class="timeline-skills">
+                <span class="skill-mini-tag">TCP/IP Fundamentals</span>
+                <span class="skill-mini-tag">VLANs &amp; Trunking</span>
+                <span class="skill-mini-tag">Inter-VLAN Routing</span>
+                <span class="skill-mini-tag">STP &amp; EtherChannel</span>
+                <span class="skill-mini-tag">IPv4 / IPv6 Subnetting</span>
+                <span class="skill-mini-tag">Network Troubleshooting</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Cisco Networking Academy -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot bg-teal" aria-hidden="true">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div class="timeline-card card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-tag tag-training">Technical Coursework &bull; Completed</span>
+                  <h3 class="timeline-title">Cisco Networking Academy Courses</h3>
+                  <h4 class="timeline-institution">Cisco Networking Academy (NetAcad)</h4>
+                </div>
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> NetAcad Verified</span>
+              </div>
+              <p class="timeline-text">
+                Completed structured modular training and laboratory assessments covering network devices, packet
+                routing mechanics, wireless technologies, and network security basics.
+              </p>
+              <div class="timeline-skills">
+                <span class="skill-mini-tag">Cisco NetAcad</span>
+                <span class="skill-mini-tag">Packet Tracer Labs</span>
+                <span class="skill-mini-tag">Routing &amp; Switching</span>
+                <span class="skill-mini-tag">Network Diagnostics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: AMIT Organization -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot bg-amber" aria-hidden="true">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="timeline-card card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-tag tag-training">Structured Technical Learning</span>
+                  <h3 class="timeline-title">Technical Training Program</h3>
+                  <h4 class="timeline-institution">AMIT Learning</h4>
+                </div>
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Academic Training</span>
+              </div>
+              <p class="timeline-text">
+                Engaged in foundational technical training focusing on programming fundamentals, software architecture,
+                and computational thinking to support automation and security scripting.
+              </p>
+              <div class="timeline-skills">
+                <span class="skill-mini-tag">Programming Foundations</span>
+                <span class="skill-mini-tag">System Logic</span>
+                <span class="skill-mini-tag">Technical Problem Solving</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS & TRAINING SECTION -->
+    <section id="certifications" class="certifications-section section">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <i class="fa-solid fa-certificate"></i> Verified Credentials
+          </div>
+          <h2 class="section-title">Certifications &amp; Courses</h2>
+          <p class="section-subtitle">
+            Formal training programs and coursework completed to establish a strong technical foundation.
+          </p>
+        </div>
+
+        <div class="certifications-grid">
+
+          <!-- Cert 1: DEPI -->
+          <div class="cert-card card reveal">
+            <div class="cert-header">
+              <div class="cert-icon bg-cyan">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <span class="cert-status-badge">Completed</span>
+            </div>
+            <h3 class="cert-title">DEPI — Incident Response &amp; SOC Analyst Training</h3>
+            <span class="cert-issuer"><i class="fa-solid fa-building"></i> Digital Egypt Pioneers Initiative
+              (DEPI)</span>
+            <p class="cert-desc">
+              Specialized training covering defensive security concepts, security monitoring, alert handling, and
+              incident investigation methodologies.
+            </p>
+            <div class="cert-footer">
+              <span class="cert-date font-mono">Completed</span>
+              <a href="#contact" class="cert-link" title="Request credential verification">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Certificate
+              </a>
+            </div>
+          </div>
+
+          <!-- Cert 2: Cisco CCNA -->
+          <div class="cert-card card reveal">
+            <div class="cert-header">
+              <div class="cert-icon bg-blue">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <span class="cert-status-badge">Completed</span>
+            </div>
+            <h3 class="cert-title">Cisco CCNA Training</h3>
+            <span class="cert-issuer"><i class="fa-solid fa-building"></i> Cisco Certified Network Associate
+              Course</span>
+            <p class="cert-desc">
+              Comprehensive training in network fundamentals, IP connectivity, IP services, security fundamentals, and
+              network automation principles.
+            </p>
+            <div class="cert-footer">
+              <span class="cert-date font-mono">Completed</span>
+              <a href="#contact" class="cert-link" title="Request credential verification">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Certificate
+              </a>
+            </div>
+          </div>
+
+          <!-- Cert 3: Cisco NetAcad -->
+          <div class="cert-card card reveal">
+            <div class="cert-header">
+              <div class="cert-icon bg-teal">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <span class="cert-status-badge">Completed</span>
+            </div>
+            <h3 class="cert-title">Cisco Networking Academy Certificates</h3>
+            <span class="cert-issuer"><i class="fa-solid fa-building"></i> Cisco Networking Academy</span>
+            <p class="cert-desc">
+              Verified certifications in enterprise routing, switching basics, and packet simulation utilizing Cisco
+              Packet Tracer.
+            </p>
+            <div class="cert-footer">
+              <span class="cert-date font-mono">Completed</span>
+              <a href="#contact" class="cert-link" title="Request credential verification">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Certificate
+              </a>
+            </div>
+          </div>
+
+          <!-- Cert 4: Huawei Cybersecurity -->
+          <div class="cert-card card reveal">
+            <div class="cert-header">
+              <div class="cert-icon bg-rose">
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <span class="cert-status-badge">Completed</span>
+            </div>
+            <h3 class="cert-title">Huawei Training Course of Cybersecurity</h3>
+            <span class="cert-issuer"><i class="fa-solid fa-building"></i> Huawei</span>
+            <p class="cert-desc">
+              Coursework covering enterprise cybersecurity architecture, network perimeter defense, and data protection
+              strategies.
+            </p>
+            <div class="cert-footer">
+              <span class="cert-date font-mono">Completed</span>
+              <a href="#contact" class="cert-link" title="Request credential verification">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Certificate
+              </a>
+            </div>
+          </div>
+
+          <!-- Cert 5: Offensive Cyber CEH / OSCP Prep -->
+          <div class="cert-card card reveal">
+            <div class="cert-header">
+              <div class="cert-icon bg-amber">
+                <i class="fa-solid fa-user-ninja"></i>
+              </div>
+              <span class="cert-status-badge">Completed</span>
+            </div>
+            <h3 class="cert-title">Offensive Cybersecurity Course: CEH &amp; OSCP Preparation</h3>
+            <span class="cert-issuer"><i class="fa-solid fa-building"></i> Specialized Cybersecurity Training</span>
+            <p class="cert-desc">
+              Studied adversary tactics, penetration testing methodologies, reconnaissance vectors, and attack vectors
+              to enhance defensive detection capabilities.
+            </p>
+            <div class="cert-footer">
+              <span class="cert-date font-mono">Completed</span>
+              <a href="#contact" class="cert-link" title="Request credential verification">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Certificate
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FREELANCING SECTION -->
+    <section id="freelancing" class="freelancing-section section">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <i class="fa-solid fa-handshake"></i> Professional Offerings
+          </div>
+          <h2 class="section-title">Freelancing &amp; Technical Services</h2>
+          <p class="section-subtitle">
+            An honest, transparent breakdown of services I am qualified to provide today versus advanced SOC
+            capabilities currently under development.
+          </p>
+        </div>
+
+        <div class="freelancing-grid">
+
+          <!-- Column 1: Services Currently Offered -->
+          <div class="freelance-column card reveal">
+            <div class="col-badge-header">
+              <span class="status-badge status-completed">
+                <i class="fa-solid fa-check-double"></i> Ready to Deliver
+              </span>
+            </div>
+            <h3 class="col-title">Services I Currently Offer</h3>
+            <p class="col-desc">
+              Grounded in thorough Cisco CCNA coursework, Packet Tracer simulations, and hands-on networking practice.
+            </p>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-bullet"><i class="fa-solid fa-diagram-project"></i></div>
+                <div class="service-info">
+                  <h4>Cisco Packet Tracer Network Configuration</h4>
+                  <p>Design, configure, and simulate switch and router setups including VLANs, inter-VLAN routing, and
+                    trunking.</p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-bullet"><i class="fa-solid fa-calculator"></i></div>
+                <div class="service-info">
+                  <h4>Network Subnetting &amp; IP Planning</h4>
+                  <p>IPv4 (FLSM/VLSM) and IPv6 address scheme planning to maximize address utilization and optimize
+                    broadcast domains.</p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-bullet"><i class="fa-solid fa-sitemap"></i></div>
+                <div class="service-info">
+                  <h4>Network Topology Design &amp; Documentation</h4>
+                  <p>Constructing clean, structured logical and physical network diagrams for small to medium enterprise
+                    environments.</p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-bullet"><i class="fa-solid fa-wrench"></i></div>
+                <div class="service-info">
+                  <h4>Basic Network Troubleshooting &amp; Diagnostics</h4>
+                  <p>Isolating connectivity breakdowns, ping/traceroute verification, default gateway mismatches, and
+                    route table audits.</p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-bullet"><i class="fa-solid fa-file-contract"></i></div>
+                <div class="service-info">
+                  <h4>Basic Network &amp; Security Configuration Audits</h4>
+                  <p>Reviewing basic switchport security, access lists (ACLs), and device configuration hardening.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="col-footer">
+              <a href="#contact" class="btn btn-primary btn-block">
+                <i class="fa-solid fa-comments"></i> Inquire About Networking Services
+              </a>
+              <a href="https://kafiil.com/u/Badr_Eldeen11" target="_blank" rel="noopener noreferrer"
+                class="btn btn-secondary btn-block">
+                <i class="fa-solid fa-briefcase"></i> View Profile on Kafiil (Freelance)
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 2: Services Developing Toward -->
+          <div class="freelance-column card freelance-column-developing reveal">
+            <div class="col-badge-header">
+              <span class="status-badge status-developing">
+                <i class="fa-solid fa-spinner fa-spin"></i> Currently Developing
+              </span>
+            </div>
+            <h3 class="col-title">Services I Am Developing Toward</h3>
+            <p class="col-desc">
+              Advanced cybersecurity capabilities currently honed through labs, CTFs, and DEPI SOC training before
+              offering commercially.
+            </p>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-bullet"><i class="fa-brands fa-windows"></i></div>
+                <div class="service-info">
+                  <h4>Windows Endpoint Triage &amp; Investigation</h4>
+                  <p>Deep host telemetry analysis using Sysinternals, Event Logs, and artifact timelines to isolate
+                    persistence.</p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-bullet"><i class="fa-solid fa-receipt"></i></div>
+                <div class="service-info">
+                  <h4>Security Log Analysis &amp; Event Correlation</h4>
+                  <p>Ingesting and querying multi-source server and firewall logs to reconstruct security event
+                    timelines.</p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-bullet"><i class="fa-solid fa-biohazard"></i></div>
+                <div class="service-info">
+                  <h4>Incident Investigation &amp; IOC Analysis</h4>
+                  <p>Harvesting threat indicators (hashes, IP beacons, malicious domains) and assessing potential blast
+                    radius.</p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-bullet"><i class="fa-solid fa-headset"></i></div>
+                <div class="service-info">
+                  <h4>SOC Level 1 Support &amp; Triage Assistance</h4>
+                  <p>First-line review of inbound security alerts, distinguishing benign activity from actionable
+                    security threats.</p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-bullet"><i class="fa-solid fa-eye"></i></div>
+                <div class="service-info">
+                  <h4>Continuous Security Monitoring</h4>
+                  <p>Assisting defensive operations with proactive threat hunts and rule-based surveillance.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="col-footer">
+              <div class="developing-notice">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>Honest Positioning: Advanced SOC services are labeled as learning goals to maintain strict
+                  professional integrity.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="education-section section">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <i class="fa-solid fa-graduation-cap"></i> Academic Foundation
+          </div>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">
+            Solid university education providing deep theoretical grounding in algorithms, systems, networking, and
+            artificial intelligence.
+          </p>
+        </div>
+
+        <div class="education-card card reveal">
+          <div class="edu-card-grid">
+            <div class="edu-main">
+              <div class="edu-university-logo" aria-hidden="true">
+                <i class="fa-solid fa-building-columns"></i>
+              </div>
+              <div class="edu-header-content">
+                <h3 class="edu-institution">Cairo University</h3>
+                <h4 class="edu-faculty">Faculty of Computer Science and Artificial Intelligence</h4>
+                <div class="edu-degree">
+                  <span class="degree-badge">Bachelor of Science</span>
+                  <span class="major-text">Computer Science / Artificial Intelligence</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="edu-meta">
+              <div class="meta-block">
+                <span class="meta-label">Expected Graduation</span>
+                <span class="meta-val font-mono">2027</span>
+              </div>
+              <div class="meta-block">
+                <span class="meta-label">Location</span>
+                <span class="meta-val">Giza / Cairo, Egypt</span>
+              </div>
+              <div class="meta-block">
+                <span class="meta-label">Discipline</span>
+                <span class="meta-val">CS &amp; AI</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="edu-curriculum">
+            <h5 class="curriculum-title"><i class="fa-solid fa-book-bookmark text-cyan"></i> Key Academic Disciplines
+              &amp; Coursework:</h5>
+            <div class="curriculum-tags">
+              <span class="curr-tag">Computer Science Fundamentals</span>
+              <span class="curr-tag">Artificial Intelligence</span>
+              <span class="curr-tag">Software Engineering</span>
+              <span class="curr-tag">Database Systems &amp; SQL</span>
+              <span class="curr-tag">Computer Networking</span>
+              <span class="curr-tag">Computer Architecture</span>
+              <span class="curr-tag">Pattern Recognition</span>
+              <span class="curr-tag">Data Structures &amp; Algorithms</span>
+              <span class="curr-tag">Operating Systems Internals</span>
+              <span class="curr-tag">Object-Oriented Programming</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section section">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <i class="fa-solid fa-address-card"></i> Get In Touch
+          </div>
+          <h2 class="section-title">Contact &amp; Connect</h2>
+          <p class="section-subtitle">
+            Whether you are a recruiter, SOC lead, or looking for networking assistance, feel free to reach out
+            directly.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Contact Information Card -->
+          <div class="contact-info-card card reveal">
+            <h3 class="contact-card-title">Contact Information</h3>
+            <p class="contact-card-desc">
+              I am actively seeking SOC analyst internships, junior defensive security positions, and networking
+              projects.
+            </p>
+
+            <div class="contact-items-list">
+
+              <a href="mailto:badrkhaledghareeb.3tel@gmail.com" class="contact-item">
+                <div class="contact-icon bg-cyan">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-label">Email</span>
+                  <span class="contact-val font-mono">badrkhaledghareeb.3tel@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="tel:01507291366" class="contact-item">
+                <div class="contact-icon bg-emerald">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-label">Phone</span>
+                  <span class="contact-val font-mono">01507291366</span>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/badreldeenkhaled" target="_blank" rel="noopener noreferrer"
+                class="contact-item">
+                <div class="contact-icon bg-blue">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-label">LinkedIn</span>
+                  <span class="contact-val">linkedin.com/in/badreldeenkhaled</span>
+                </div>
+              </a>
+
+              <div class="contact-item">
+                <div class="contact-icon bg-amber">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-label">Location</span>
+                  <span class="contact-val">Cairo / Giza, Egypt</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Social Links Group -->
+            <div class="contact-socials-block">
+              <h4 class="socials-heading">Profiles &amp; Portals:</h4>
+              <div class="social-pills-row">
+                <a href="https://www.linkedin.com/in/badreldeenkhaled" target="_blank" rel="noopener noreferrer"
+                  class="social-pill" aria-label="LinkedIn Profile">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/Badreldeen2006" target="_blank" rel="noopener noreferrer"
+                  class="social-pill" aria-label="GitHub Profile Placeholder">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="#freelancing" class="social-pill" aria-label="Freelancing Profile Placeholder">
+                  <i class="fa-solid fa-briefcase"></i> Freelance
+                </a>
+                <a href="https://youtube.com/#" target="_blank" rel="noopener noreferrer" class="social-pill"
+                  aria-label="YouTube Channel Placeholder">
+                  <i class="fa-brands fa-youtube"></i> YouTube
+                </a>
+                <a href="https://facebook.com/#" target="_blank" rel="noopener noreferrer" class="social-pill"
+                  aria-label="Facebook Profile Placeholder">
+                  <i class="fa-brands fa-facebook"></i> Facebook
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- HTML Contact Form -->
+          <div class="contact-form-card card reveal">
+            <h3 class="contact-card-title">Send a Direct Message</h3>
+            <p class="contact-card-desc">Fill in the details below and I will respond promptly.</p>
+
+            <form id="portfolio-contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-user input-icon" aria-hidden="true"></i>
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. John Doe"
+                    required autocomplete="name">
+                </div>
+                <span class="form-error-msg" id="name-error">Please enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-envelope input-icon" aria-hidden="true"></i>
+                  <input type="email" id="contact-email" name="email" class="form-input"
+                    placeholder="e.g. john@example.com" required autocomplete="email">
+                </div>
+                <span class="form-error-msg" id="email-error">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-tag input-icon" aria-hidden="true"></i>
+                  <input type="text" id="contact-subject" name="subject" class="form-input"
+                    placeholder="e.g. SOC Internship / Network Inquiry" required>
+                </div>
+                <span class="form-error-msg" id="subject-error">Please enter a subject.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message <span class="required">*</span></label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fa-solid fa-comment-dots input-icon" aria-hidden="true"></i>
+                  <textarea id="contact-message" name="message" class="form-input form-textarea" rows="4"
+                    placeholder="Describe the opportunity, question, or project..." required></textarea>
+                </div>
+                <span class="form-error-msg" id="message-error">Please enter your message.</span>
+              </div>
+
+              <div class="form-status-alert" id="form-status-alert" role="alert" aria-live="polite"></div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="contact-submit-btn">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="footer-name">Badrelden Khaled Ghareeb</span>
+        <span class="footer-role">Aspiring SOC Analyst | Incident Response</span>
+        <p class="footer-location">Cairo University &bull; Faculty of CS &amp; AI</p>
+      </div>
+
+      <div class="footer-links-group">
+        <a href="mailto:badrkhaledghareeb.3tel@gmail.com" class="footer-link">
+          <i class="fa-solid fa-envelope"></i> badrkhaledghareeb.3tel@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/badreldeenkhaled" target="_blank" rel="noopener noreferrer"
+          class="footer-link">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/Badreldeen2006" target="_blank" rel="noopener noreferrer" class="footer-link">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="#freelancing" class="footer-link">
+          <i class="fa-solid fa-briefcase"></i> Freelancing
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; 2026 Badrelden Khaled Ghareeb. All rights reserved.
+        </p>
+        <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to top of page">
+          <span>Back to top</span> <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INVESTIGATION DETAIL MODAL (Accessible Dialog for Labs) -->
+  <div class="modal-overlay" id="lab-modal" role="dialog" aria-modal="true" aria-labelledby="modal-lab-title"
+    aria-hidden="true">
+    <div class="modal-container card">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-category font-mono" id="modal-lab-category">Network Packet Forensics</span>
+          <h3 class="modal-title" id="modal-lab-title">Investigation Detail Report</h3>
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close investigation detail modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body" id="modal-lab-body">
+        <!-- Content injected dynamically via js/script.js based on clicked lab -->
+      </div>
+
+      <div class="modal-footer">
+        <span class="modal-meta-note font-mono"><i class="fa-solid fa-shield"></i> Defensive Telemetry Lab Record</span>
+        <button class="btn btn-secondary" id="modal-dismiss-btn">Close Report</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
