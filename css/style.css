@@ -732,24 +732,25 @@ button, input, textarea {
 /* Hero Profile Row & Avatar */
 .hero-profile-row {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 1.25rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .hero-avatar-wrapper {
   position: relative;
-  width: 72px;
-  height: 72px;
+  width: 260px;
+  height: 260px;
   flex-shrink: 0;
 }
 
 .hero-avatar-glow {
   position: absolute;
-  inset: -6px;
+  inset: -10px;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(var(--cyan-rgb), 0.35) 0%, transparent 70%);
-  filter: blur(10px);
+  filter: blur(16px);
   z-index: 0;
   animation: avatar-glow-pulse 3s ease-in-out infinite;
 }
@@ -760,13 +761,13 @@ button, input, textarea {
 }
 
 .hero-avatar-img {
-  width: 72px;
-  height: 72px;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
-  border: 2.5px solid rgba(var(--cyan-rgb), 0.5);
-  box-shadow: 0 0 18px rgba(var(--cyan-rgb), 0.2);
+  border: 5px solid rgba(var(--cyan-rgb), 0.5);
+  box-shadow: 0 0 44px rgba(var(--cyan-rgb), 0.28);
   position: relative;
   z-index: 1;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -774,18 +775,18 @@ button, input, textarea {
 
 .hero-avatar-wrapper:hover .hero-avatar-img {
   border-color: var(--cyan);
-  box-shadow: 0 0 28px rgba(var(--cyan-rgb), 0.35);
+  box-shadow: 0 0 44px rgba(var(--cyan-rgb), 0.4);
 }
 
 .hero-avatar-status {
   position: absolute;
-  bottom: 3px;
-  right: 3px;
-  width: 14px;
-  height: 14px;
+  bottom: 14px;
+  right: 14px;
+  width: 28px;
+  height: 28px;
   background: var(--emerald);
   border-radius: 50%;
-  border: 2.5px solid var(--bg-base);
+  border: 4px solid var(--bg-base);
   z-index: 2;
   box-shadow: 0 0 8px rgba(var(--emerald-rgb), 0.5);
 }
@@ -2105,6 +2106,14 @@ button, input, textarea {
   gap: 0.35rem;
 }
 
+.cert-links-group {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 /* --------------------------------------------------------------------------
    16. FREELANCING SECTION
    -------------------------------------------------------------------------- */
@@ -2922,22 +2931,22 @@ button, input, textarea {
   }
 
   .hero-avatar-wrapper {
-    width: 56px;
-    height: 56px;
+    width: 190px;
+    height: 190px;
   }
 
   .hero-avatar-img {
-    width: 56px;
-    height: 56px;
-    border-width: 2px;
+    width: 190px;
+    height: 190px;
+    border-width: 4px;
   }
 
   .hero-avatar-status {
-    width: 12px;
-    height: 12px;
-    bottom: 2px;
-    right: 2px;
-    border-width: 2px;
+    width: 22px;
+    height: 22px;
+    bottom: 8px;
+    right: 8px;
+    border-width: 3px;
   }
 
   /* Section Header */
@@ -3432,20 +3441,21 @@ button, input, textarea {
   }
 
   .hero-avatar-wrapper {
-    width: 48px;
-    height: 48px;
+    width: 150px;
+    height: 150px;
   }
 
   .hero-avatar-img {
-    width: 48px;
-    height: 48px;
+    width: 150px;
+    height: 150px;
+    border-width: 3.5px;
   }
 
   .hero-avatar-status {
-    width: 10px;
-    height: 10px;
-    bottom: 1px;
-    right: 1px;
+    width: 20px;
+    height: 20px;
+    bottom: 4px;
+    right: 4px;
   }
 
   .hero-description {

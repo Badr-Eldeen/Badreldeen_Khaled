@@ -90,42 +90,44 @@
         </button>
       </div>
     </div>
-
-    <!-- Mobile Drawer Navigation -->
-    <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
-    <div class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation" aria-hidden="true">
-      <div class="mobile-nav-header">
-        <div class="mobile-nav-brand">
-          <i class="fa-solid fa-shield-halved text-cyan"></i>
-          <span>Navigation</span>
-        </div>
-        <button id="mobile-menu-close" class="mobile-close-btn" aria-label="Close navigation menu">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
-      <ul class="mobile-nav-list">
-        <li><a href="#home" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
-        <li><a href="#about" class="mobile-nav-link"><i class="fa-solid fa-user-shield"></i> About</a></li>
-        <li><a href="#skills" class="mobile-nav-link"><i class="fa-solid fa-microchip"></i> Skills</a></li>
-        <li><a href="#tools" class="mobile-nav-link"><i class="fa-solid fa-toolbox"></i> Tools</a></li>
-        <li><a href="#projects" class="mobile-nav-link"><i class="fa-solid fa-network-wired"></i> Projects &amp;
-            Labs</a></li>
-        <li><a href="#grad-project" class="mobile-nav-link"><i class="fa-solid fa-shield-virus"></i> Graduation
-            Project</a></li>
-        <li><a href="#training" class="mobile-nav-link"><i class="fa-solid fa-timeline"></i> Experience &amp;
-            Training</a></li>
-        <li><a href="#certifications" class="mobile-nav-link"><i class="fa-solid fa-certificate"></i> Certifications</a>
-        </li>
-        <li><a href="#freelancing" class="mobile-nav-link"><i class="fa-solid fa-briefcase"></i> Freelancing</a></li>
-        <li><a href="#education" class="mobile-nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
-        <li><a href="#contact" class="mobile-nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-      </ul>
-      <div class="mobile-nav-footer">
-        <span class="status-indicator-dot"></span>
-        <span>Open to SOC Internships &amp; Roles</span>
-      </div>
-    </div>
   </header>
+
+  <!-- Mobile Drawer Navigation (kept outside <header> so its position:fixed
+       isn't re-contained by the header's backdrop-filter, which otherwise
+       traps the drawer inside the header's own small height on mobile) -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
+  <div class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="mobile-nav-header">
+      <div class="mobile-nav-brand">
+        <i class="fa-solid fa-shield-halved text-cyan"></i>
+        <span>Navigation</span>
+      </div>
+      <button id="mobile-menu-close" class="mobile-close-btn" aria-label="Close navigation menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#home" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#about" class="mobile-nav-link"><i class="fa-solid fa-user-shield"></i> About</a></li>
+      <li><a href="#skills" class="mobile-nav-link"><i class="fa-solid fa-microchip"></i> Skills</a></li>
+      <li><a href="#tools" class="mobile-nav-link"><i class="fa-solid fa-toolbox"></i> Tools</a></li>
+      <li><a href="#projects" class="mobile-nav-link"><i class="fa-solid fa-network-wired"></i> Projects &amp;
+          Labs</a></li>
+      <li><a href="#grad-project" class="mobile-nav-link"><i class="fa-solid fa-shield-virus"></i> Graduation
+          Project</a></li>
+      <li><a href="#training" class="mobile-nav-link"><i class="fa-solid fa-timeline"></i> Experience &amp;
+          Training</a></li>
+      <li><a href="#certifications" class="mobile-nav-link"><i class="fa-solid fa-certificate"></i> Certifications</a>
+      </li>
+      <li><a href="#freelancing" class="mobile-nav-link"><i class="fa-solid fa-briefcase"></i> Freelancing</a></li>
+      <li><a href="#education" class="mobile-nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+      <li><a href="#contact" class="mobile-nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <span class="status-indicator-dot"></span>
+      <span>Open to SOC Internships &amp; Roles</span>
+    </div>
+  </div>
 
   <!-- MAIN CONTENT -->
   <main id="main-content">
@@ -523,8 +525,8 @@
               <button class="btn btn-sm btn-primary view-lab-btn" data-lab="lab-traffic">
                 <i class="fa-solid fa-microscope"></i> View Investigation
               </button>
-              <a href="https://github.com/Badreldeen2006/network-traffic-investigation-lab" target="_blank"
-                rel="noopener noreferrer" class="btn btn-sm btn-outline">
+              <a href="https://github.com/Badreldeen2006" target="_blank"
+                rel="noopener noreferrer" class="btn btn-sm btn-outline" title="Dedicated repo coming soon — visit my GitHub profile">
                 <i class="fa-brands fa-github"></i> GitHub
               </a>
             </div>
@@ -589,8 +591,8 @@
               <button class="btn btn-sm btn-primary view-lab-btn" data-lab="lab-snort">
                 <i class="fa-solid fa-microscope"></i> View Investigation
               </button>
-              <a href="https://github.com/Badreldeen2006/snort-intrusion-detection-lab" target="_blank"
-                rel="noopener noreferrer" class="btn btn-sm btn-outline">
+              <a href="https://github.com/Badreldeen2006" target="_blank"
+                rel="noopener noreferrer" class="btn btn-sm btn-outline" title="Dedicated repo coming soon — visit my GitHub profile">
                 <i class="fa-brands fa-github"></i> GitHub
               </a>
             </div>
@@ -655,8 +657,8 @@
               <button class="btn btn-sm btn-primary view-lab-btn" data-lab="lab-nmap">
                 <i class="fa-solid fa-microscope"></i> View Investigation
               </button>
-              <a href="https://github.com/Badreldeen2006/network-recon-nmap-lab" target="_blank"
-                rel="noopener noreferrer" class="btn btn-sm btn-outline">
+              <a href="https://github.com/Badreldeen2006" target="_blank"
+                rel="noopener noreferrer" class="btn btn-sm btn-outline" title="Dedicated repo coming soon — visit my GitHub profile">
                 <i class="fa-brands fa-github"></i> GitHub
               </a>
             </div>
@@ -721,8 +723,8 @@
               <button class="btn btn-sm btn-primary view-lab-btn" data-lab="lab-windows">
                 <i class="fa-solid fa-microscope"></i> View Investigation
               </button>
-              <a href="https://github.com/Badreldeen2006/windows-endpoint-investigation-lab" target="_blank"
-                rel="noopener noreferrer" class="btn btn-sm btn-outline">
+              <a href="https://github.com/Badreldeen2006" target="_blank"
+                rel="noopener noreferrer" class="btn btn-sm btn-outline" title="Dedicated repo coming soon — visit my GitHub profile">
                 <i class="fa-brands fa-github"></i> GitHub
               </a>
             </div>
@@ -788,8 +790,8 @@
               <button class="btn btn-sm btn-primary view-lab-btn" data-lab="lab-malware">
                 <i class="fa-solid fa-microscope"></i> View Investigation
               </button>
-              <a href="https://github.com/Badreldeen2006/malware-entropy-ml-detection" target="_blank"
-                rel="noopener noreferrer" class="btn btn-sm btn-outline">
+              <a href="https://github.com/Badreldeen2006" target="_blank"
+                rel="noopener noreferrer" class="btn btn-sm btn-outline" title="Dedicated repo coming soon — visit my GitHub profile">
                 <i class="fa-brands fa-github"></i> GitHub
               </a>
             </div>
@@ -854,8 +856,8 @@
               <button class="btn btn-sm btn-secondary view-lab-btn" data-lab="lab-siem">
                 <i class="fa-solid fa-road"></i> Lab Roadmap
               </button>
-              <a href="https://github.com/Badreldeen2006/siem-security-monitoring-lab" target="_blank"
-                rel="noopener noreferrer" class="btn btn-sm btn-outline">
+              <a href="https://github.com/Badreldeen2006" target="_blank"
+                rel="noopener noreferrer" class="btn btn-sm btn-outline" title="Dedicated repo coming soon — visit my GitHub profile">
                 <i class="fa-brands fa-github"></i> GitHub
               </a>
             </div>
@@ -1298,13 +1300,12 @@
               </div>
 
               <div class="grad-actions">
-                <a href="https://github.com/Badreldeen2006/permission-guard" target="_blank" rel="noopener noreferrer"
-                  class="btn btn-primary">
-                  <i class="fa-brands fa-github"></i> GitHub (Project Repo)
-                </a>
-                <a href="#contact" class="btn btn-secondary">
-                  <i class="fa-solid fa-file-lines"></i> Project Documentation
-                </a>
+                <span class="btn btn-outline btn-disabled" title="Repository will be made public upon completion of Phase 3">
+                  <i class="fa-brands fa-github"></i> GitHub Repo (Coming Soon)
+                </span>
+                <span class="btn btn-outline btn-disabled" title="Full documentation will be published upon completion of Phase 3">
+                  <i class="fa-solid fa-file-lines"></i> Project Documentation (Coming Soon)
+                </span>
                 <span class="btn btn-outline btn-disabled" title="Demo will be released upon completion of Phase 3">
                   <i class="fa-solid fa-play"></i> Live Demo (Coming Soon)
                 </span>
@@ -1527,7 +1528,7 @@
             </div>
           </div>
 
-          <!-- Cert 2: Cisco CCNA -->
+          <!-- Cert 2: CCNA-1 -->
           <div class="cert-card card reveal">
             <div class="cert-header">
               <div class="cert-icon bg-blue">
@@ -1535,22 +1536,21 @@
               </div>
               <span class="cert-status-badge">Completed</span>
             </div>
-            <h3 class="cert-title">Cisco CCNA Training</h3>
-            <span class="cert-issuer"><i class="fa-solid fa-building"></i> Cisco Certified Network Associate
-              Course</span>
+            <h3 class="cert-title">CCNA: Introduction to Networks</h3>
+            <span class="cert-issuer"><i class="fa-solid fa-building"></i>Cisco Networking Academy</span>
             <p class="cert-desc">
               Comprehensive training in network fundamentals, IP connectivity, IP services, security fundamentals, and
               network automation principles.
             </p>
             <div class="cert-footer">
               <span class="cert-date font-mono">Completed</span>
-              <a href="#contact" class="cert-link" title="Request credential verification">
+              <a href="https://drive.google.com/drive/folders/1QGLwX9nUbDBwERmbBb18Ijz12x2f6MRS?usp=sharing" class="cert-link" title="Request credential verification">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i> Certificate
               </a>
             </div>
           </div>
 
-          <!-- Cert 3: Cisco NetAcad -->
+          <!-- Cert 3: CCNA-2 -->
           <div class="cert-card card reveal">
             <div class="cert-header">
               <div class="cert-icon bg-teal">
@@ -1558,7 +1558,7 @@
               </div>
               <span class="cert-status-badge">Completed</span>
             </div>
-            <h3 class="cert-title">Cisco Networking Academy Certificates</h3>
+            <h3 class="cert-title">CCNA: Switching, Routing, and Wireless Essentials</h3>
             <span class="cert-issuer"><i class="fa-solid fa-building"></i> Cisco Networking Academy</span>
             <p class="cert-desc">
               Verified certifications in enterprise routing, switching basics, and packet simulation utilizing Cisco
@@ -1566,9 +1566,12 @@
             </p>
             <div class="cert-footer">
               <span class="cert-date font-mono">Completed</span>
-              <a href="#contact" class="cert-link" title="Request credential verification">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Certificate
-              </a>
+              <div class="cert-links-group">
+                <a href="https://drive.google.com/drive/folders/1SGOLIW1_XKIOhE7jf94OscnPL3-aeorc?usp=sharing"
+                  target="_blank" rel="noopener noreferrer" class="cert-link" title="View CCNA2 certificate">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Certificate
+                </a>
+              </div>
             </div>
           </div>
 
@@ -1588,7 +1591,8 @@
             </p>
             <div class="cert-footer">
               <span class="cert-date font-mono">Completed</span>
-              <a href="#contact" class="cert-link" title="Request credential verification">
+              <a href="https://drive.google.com/drive/folders/1lfs7iVrIIeDbeSaGAVSbOEjeL8Knhav6?usp=sharing"
+                target="_blank" rel="noopener noreferrer" class="cert-link" title="View HCIA certificate">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i> Certificate
               </a>
             </div>
@@ -1610,7 +1614,8 @@
             </p>
             <div class="cert-footer">
               <span class="cert-date font-mono">Completed</span>
-              <a href="#contact" class="cert-link" title="Request credential verification">
+              <a href="https://drive.google.com/drive/folders/1ahpTGUQDo5a24Y3j0X24S4zyUOnLH11F?usp=sharing"
+                target="_blank" rel="noopener noreferrer" class="cert-link" title="View Offensive Security certificate">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i> Certificate
               </a>
             </div>
@@ -1925,12 +1930,12 @@
                 <a href="#freelancing" class="social-pill" aria-label="Freelancing Profile Placeholder">
                   <i class="fa-solid fa-briefcase"></i> Freelance
                 </a>
-                <a href="https://youtube.com/#" target="_blank" rel="noopener noreferrer" class="social-pill"
-                  aria-label="YouTube Channel Placeholder">
+                <a href="https://www.youtube.com/@BADRELDENGHAREEB" target="_blank" rel="noopener noreferrer" class="social-pill"
+                  aria-label="YouTube Channel">
                   <i class="fa-brands fa-youtube"></i> YouTube
                 </a>
-                <a href="https://facebook.com/#" target="_blank" rel="noopener noreferrer" class="social-pill"
-                  aria-label="Facebook Profile Placeholder">
+                <a href="https://www.facebook.com/badr.elden.ghareeb" target="_blank" rel="noopener noreferrer" class="social-pill"
+                  aria-label="Facebook Profile">
                   <i class="fa-brands fa-facebook"></i> Facebook
                 </a>
               </div>
@@ -2017,6 +2022,12 @@
         </a>
         <a href="https://github.com/Badreldeen2006" target="_blank" rel="noopener noreferrer" class="footer-link">
           <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="https://www.youtube.com/@BADRELDENGHAREEB" target="_blank" rel="noopener noreferrer" class="footer-link">
+          <i class="fa-brands fa-youtube"></i> YouTube
+        </a>
+        <a href="https://www.facebook.com/badr.elden.ghareeb" target="_blank" rel="noopener noreferrer" class="footer-link">
+          <i class="fa-brands fa-facebook"></i> Facebook
         </a>
         <a href="#freelancing" class="footer-link">
           <i class="fa-solid fa-briefcase"></i> Freelancing

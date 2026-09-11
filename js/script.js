@@ -506,18 +506,56 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Simulated sending feedback
+      // Preparing feedback before handing off to Gmail
       submitBtn.disabled = true;
-      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Preparing Message...';
+      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Opening Gmail...';
 
       setTimeout(() => {
         const senderName = nameInput.value.trim();
+        const senderEmail = emailInput.value.trim();
+        const subjectVal = subjectInput.value.trim();
+        const messageVal = messageInput.value.trim();
+
+        const recipient = 'badrkhaledghareeb.3tel@gmail.com';
+        const mailSubject = `[Portfolio] ${subjectVal}`;
+        const mailBody =
+          `Name: ${senderName}\n` +
+          `Email: ${senderEmail}\n\n` +
+          `${messageVal}`;
+
+        // Gmail's own web compose URL — opens straight into Gmail (not a
+        // generic mail chooser) when the user is signed in on desktop
+        const gmailWebUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(recipient)}&su=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
+
+        // Gmail's app-specific URL scheme — opens the Gmail app's compose
+        // screen directly on iOS/Android instead of the generic mail chooser
+        const gmailAppUrl = `googlegmail:///co?to=${encodeURIComponent(recipient)}&subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
+
+        // Plain mailto fallback for devices without the Gmail app installed
+        const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
+
+        const isMobile = /iphone|ipad|ipod|android/i.test(navigator.userAgent);
+
+        if (isMobile) {
+          // Try the Gmail app first; if it isn't installed, nothing happens
+          // and we quietly fall back to the system mail chooser a moment later
+          window.location.href = gmailAppUrl;
+          setTimeout(() => {
+            window.location.href = mailtoUrl;
+          }, 600);
+        } else {
+          // Desktop: open Gmail's compose window directly in a new tab
+          window.open(gmailWebUrl, '_blank', 'noopener,noreferrer');
+        }
+
         formStatusAlert.className = 'form-status-alert alert-success';
         formStatusAlert.innerHTML = `
           <strong><i class="fa-solid fa-circle-check"></i> Thank you, ${escapeHtml(senderName)}!</strong><br>
-          Your message has been captured. You can also connect directly via 
-          <a href="mailto:badrkhaledghareeb.3tel@gmail.com" class="text-cyan">badrkhaledghareeb.3tel@gmail.com</a> 
-          or phone <a href="tel:01507291366" class="text-cyan">01507291366</a>.
+          Gmail should now be opening with your message pre-filled — just hit send there.
+          If nothing opened, use
+          <a href="${gmailWebUrl}" target="_blank" rel="noopener noreferrer" class="text-cyan">Open in Gmail</a>
+          or email directly at
+          <a href="mailto:${recipient}" class="text-cyan">${recipient}</a>.
         `;
 
         contactForm.reset();
@@ -529,7 +567,7 @@ document.addEventListener('DOMContentLoaded', () => {
           formStatusAlert.className = 'form-status-alert';
           formStatusAlert.innerHTML = '';
         }, 10000);
-      }, 750);
+      }, 500);
     });
   }
 
